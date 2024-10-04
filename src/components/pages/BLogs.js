@@ -1,10 +1,13 @@
+import React from 'react'
+import CreateForm from '../dashboard/CreateForm/CreateForm.js'
 
-import React from 'react';
-
-const BLogs = () =>{
-    return <div>
-        <p>Blog Add Page</p>
+const Blogs = () => {
+  return (
+    <div>
+      <CreateForm/>
     </div>
+    
+  );
 }
 
-export default BLogs;
+export default Blogs;
