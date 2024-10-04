@@ -1,13 +1,13 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import AuthForm from './components/login/AuthForm';
 import { Navbar } from './components/Navbar/Navbar';
-import { About, Contact, Home, Dashboard } from './components/pages';
+import { About, Contact, Home, Dashboard, BLogs } from './components/pages';
 import { useState } from 'react';
 import './App.css';
 
 function App() {
   const [loggedIn, setLoggedIn] = useState(false);
-
+  console.log(loggedIn, '====loggedIn')
   return (
     <div className="main">
       <Router>
@@ -35,6 +35,10 @@ function App() {
               <Route
                 path="/contact"
                 element={<Contact />}
+              />
+              <Route exact
+                path="/addblog"
+                element={<BLogs />}
               />
             </>
           ) : (
