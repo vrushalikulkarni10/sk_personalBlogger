@@ -16,6 +16,7 @@ input[type='text'] {
     font-size: 1em; /* Font size for better readability */
     border: 1px solid #ccc; /* Border style */
     border-radius: 5px; /* Rounded corners */
+    align-tracks: center;
 }
 
 textarea {
