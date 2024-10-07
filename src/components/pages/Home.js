@@ -8,6 +8,7 @@ const Home = () => {
       .then((response) => response.json())
       .then((json) => setBlogs(json));
   });
+  
 
   return (
     <div

@@ -1,10 +1,10 @@
 import React from 'react'
-import CreateForm from '../dashboard/CreateForm/CreateForm.js'
+import CreateForm from '../WriteBlog/WriteBlog'
 
 const Blogs = () => {
   return (
     <div>
-      <CreateForm/>
+      <WriteBlog/>
     </div>
     
   );

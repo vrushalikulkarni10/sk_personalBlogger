@@ -78,13 +78,14 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import AuthForm from './components/login/AuthForm';
 import { Navbar } from './components/Navbar/Navbar';
-import { About, Home, Blogs } from './components/pages';
+import { Home} from './components/pages';
+import  WriteBlog from "./components/WriteBlog/WriteBlog"
 import Dashboard from './components/dashboard/Dashboard'; // Correct import
 import { useState } from 'react';
 import './App.css';
 
 function App() {
-  const [loggedIn, setLoggedIn] = useState(false);
+  const [loggedIn, setLoggedIn] = useState(true);
   console.log(loggedIn, '====loggedIn')
   return (
     <div className="main">
@@ -99,9 +100,9 @@ function App() {
           {loggedIn ? (
             <>
               <Route path="/" element={<Home />} />
-              <Route path="/about" element={<About />} />
+              {/* <Route path="/about" element={<About />} /> */}
               <Route path="/dashboard" element={<Dashboard />} /> {/* Use Dashboard component */}
-              <Route exact path="/addblog" element={<Blogs />} />
+              <Route exact path="/writeBlog" element={<WriteBlog />} />
             </>
           ) : (
             <Route
