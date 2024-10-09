@@ -12,24 +12,24 @@ import Button from "@mui/material/Button";
 import Box from "@mui/material/Box"; // Import Box
 
 const columns = [
-  { id: "name", label: "Name", minWidth: 170 },
-  { id: "code", label: "ISO\u00a0Code", minWidth: 100 },
+  { id: "id", label: "ID", minWidth: 170 },
+  { id: "title", label: "Title", minWidth: 100 },
   { id: "actions", label: "Actions", minWidth: 170 }
 ];
 
-function createData(name, code) {
-  return { name, code };
+function createData( id, title, code) {
+  return {id, title, code };
 }
 
 const rows = [
-  createData("India", "IN"),
-  createData("China", "CN"),
-  createData("Italy", "IT"),
-  createData("United States", "US"),
-  createData("Canada", "CA"),
-  createData("Australia", "AU"),
-  createData("Germany", "DE"),
-  createData("Ireland", "IE"),
+  createData(1001,"Aloo-Matar"),
+  createData(1002,"Kullu-Manali: A Heven"),
+  createData(1003,"React-Complete Guide"),
+  createData(1004,"Veg-Kolhapuri"),
+  createData(1005,"My SQL : Qick Guide "),
+  createData(1006,"Kathak: Hastak"),
+  createData(1007,"Hip Hop"),
+  createData(1008,"Nshik: Place Of Temples")
 ];
 
 const Dashboard = () => {
