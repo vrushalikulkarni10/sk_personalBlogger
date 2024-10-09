@@ -12,7 +12,7 @@ const Home = () => {
     {
       title: 'Tech Trends',
       content: 'Explore the latest trends in technology, including AI, blockchain, and the Internet of Things.',
-      detailedInfo: 'Stay ahead with insights into how these technologies can transform industries and everyday life.',
+      detailedInfo: 'Stay ahead with insights into how these technologies can transform industries and everyday life. Learn about advancements in AI-driven automation, the implications of blockchain for security and transparency, and how IoT devices are making our homes smarter and our cities more efficient. From tech start-ups to major corporations, discover how innovation shapes the future.',
       relatedText: 'Stay updated with the cutting-edge innovations.',
       avatar: <TechIcon />,
       topic: 'Tech',
@@ -20,7 +20,7 @@ const Home = () => {
     {
       title: 'Delicious Recipes',
       content: 'Learn to cook amazing dishes with these recipes, including appetizers, mains, and desserts.',
-      detailedInfo: 'Find step-by-step guides and tips to enhance your culinary skills, from quick meals to gourmet cooking.',
+      detailedInfo: 'Find step-by-step guides and tips to enhance your culinary skills. Explore a variety of cuisines from around the world, discover the secrets to perfecting your favorite dishes, and learn about food presentation to impress your guests. Whether you are a beginner or an experienced cook, these recipes will inspire you to create delicious meals for any occasion.',
       relatedText: 'Perfect your culinary skills with these tips.',
       avatar: <CookingIcon />,
       topic: 'Cooking',
@@ -28,7 +28,7 @@ const Home = () => {
     {
       title: 'Traveling Adventures',
       content: 'Discover breathtaking destinations around the world, from bustling cities to serene landscapes.',
-      detailedInfo: 'Get travel tips, itineraries, and advice on how to make the most of your adventures, whether you’re a solo traveler or going with friends.',
+      detailedInfo: 'Get travel tips, itineraries, and advice on how to make the most of your adventures. Learn how to pack efficiently, navigate through foreign cities, and immerse yourself in different cultures. From planning solo trips to family vacations, uncover the best places to visit, must-try local cuisines, and hidden gems off the beaten path. Traveling is not just about the destination; it’s about the experiences you create along the way.',
       relatedText: 'Explore new cultures and experiences.',
       avatar: <AirplanemodeActiveIcon />,
       topic: 'Traveling',
@@ -50,7 +50,7 @@ const Home = () => {
               {blog.content}
             </Typography>
             <Typography variant="body2" color="text.secondary" sx={{ marginBottom: 1 }}>
-              {blog.detailedInfo}  {/* More detailed info */}
+              {blog.detailedInfo}  {/* Enhanced detailed info */}
             </Typography>
             <Typography variant="body2" color="text.primary" sx={{ marginBottom: 1 }}>
               Topic: {blog.topic}
