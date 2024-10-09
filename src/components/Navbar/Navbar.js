@@ -12,7 +12,7 @@ export const Navbar = ({ loggedIn, setLoggedIn }) => {
         {loggedIn ? (
           <>
            <li>
-              <NavLink to="/home">Home</NavLink>
+              <NavLink to="/Home">Home</NavLink>
             </li>
             {/* <li>
               <NavLink to="/writeBlog">Blogs</NavLink>
